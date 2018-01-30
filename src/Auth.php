@@ -53,11 +53,11 @@ final class Auth extends UserManager {
 	/** Initializes the session and sets the correct configuration */
 	private function initSession() {
 		// use cookies to store session IDs
-		\ini_set('session.use_cookies', 1);
-		// use cookies only (do not send session IDs in URLs)
-		\ini_set('session.use_only_cookies', 1);
-		// do not send session IDs in URLs
-		\ini_set('session.use_trans_sid', 0);
+		// \ini_set('session.use_cookies', 1);
+		// // use cookies only (do not send session IDs in URLs)
+		// \ini_set('session.use_only_cookies', 1);
+		// // do not send session IDs in URLs
+		// \ini_set('session.use_trans_sid', 0);
 
 		// start the session (requests a cookie to be written on the client)
 		@Session::start();
